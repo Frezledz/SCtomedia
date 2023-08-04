@@ -1,3 +1,3 @@
 # Scratch Image renderer
 
-just go to the (https://xxxfreezerxxx.github.io/SCtomedia/)[website].
+just go to the [website](https://xxxfreezerxxx.github.io/SCtomedia/).
