@@ -42,7 +42,7 @@ window.onload = async()=> {
                 console.log(time+" "+progress);
               })
               tip.innerText="Loading FFmpeg...";
-            await ffmpeg.load({coreURL:`/assets/core/dist/umd/ffmpeg-core.js`,log:true});
+            await ffmpeg.load({coreURL:`https://xxxfreezerxxx.github.io/SCtomedia/assets/core/dist/umd/ffmpeg-core.js`,log:true});
             tip.innerText="Converting...";
             await ffmpeg.writeFile("test.bmp",new Uint8Array(fetched));
             await ffmpeg.exec(["-i","test.bmp", "test.webp"]);
