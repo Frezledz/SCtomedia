@@ -1,0 +1,25 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "just go to the [website](https://xxxfreezerxxx.github.io/SCtomedia/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxXFreezerXxx/SCtomedia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxXFreezerXxx/SCtomedia/issues"
+  },
+  "homepage": "https://github.com/xxXFreezerXxx/SCtomedia#readme",
+  "dependencies": {
+    "@ffmpeg/core": "^0.12.1",
+    "@ffmpeg/ffmpeg": "^0.12.2",
+    "@ffmpeg/util": "^0.12.0"
+  }
+}
