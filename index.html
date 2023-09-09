@@ -4,14 +4,34 @@
         <meta charset="utf-8">
         <title>Scratch to image</title>
         <script src="assets/ffmpeg/dist/umd/ffmpeg.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
         <!--I really need to use react-->
     
         <meta charset="utf-8">
     </head>
-    <body>
+    <body style="display: inline;">
         <p>This website is there to test Image scanner I made on Scratch. Go to <a href ="https://turbowarp.org/869219945?limitless&stuck">Project page</a> and follow instrution.</p><br>
         <p>Scratchで作成した画像スキャナーのテストです。<a href ="https://turbowarp.org/869219945?limitless&stuck">ここ</a> にアクセスして説明通りに動かしてみてください。</p><br>
-        <input type="file" id="input">
+        <sec><p>FPS:</p><input type="number" id="fps" min="5" max="250" value="30"></sec>
+        <sec><p>Output file type:</p><select id="filetype">
+            <option value="jpeg">Jpeg sequence</option>
+            <option value="webp">Webp sequence</option>
+            <option value="gif">gif sequence</option>
+            <option value="bmp">BMP sequence</option>
+            <option value="mp4">MP4 video</option>
+            <!--<option value="webm">Webm video</option>-->
+            <option value="avi">Avi video</option>
+        </select></sec>
+        
+        <sec><p>Select your binary data:</p><input type="file" id="input"accept=".txt"></sec>
+        <p id="tip"></p>
+        <h2>Memo / Credit</h2>
+        <sec></sec><p>It's having an error when you try to create webm file, so I had to remove it. Sorry<br>
+        Windows default media player can't play mp4 video generated. For windows users, you need to use alternative video player(e.x. Your browser), or, render avi video instead.<br>
+        Thanks to<a href="https://ffmpegwasm.netlify.app/">FFmpeg.wasm</a> for media converting system.<br>This uses<a href="JSzip">JSZip</a> and <a href="Filesaver">Filesaver</a> to create zip file.
+        <br>Everything else by <a href="https://github.com/xxXFreezerXxx">Frezledz</a>. </p>
         <script src ="index.js"></script>
     </body>
 </html>
